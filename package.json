@@ -1,6 +1,6 @@
 {
   "name": "@kpander/packager-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Utility scripts for creating distribution package versions of javascript files",
   "homepage": "https://github.com/kpander/packager-js",
   "author": {
@@ -30,7 +30,7 @@
   "bugs": {
     "url": "https://github.com/kpander/packager-js/issues"
   },
-  "devDependencies": {
+  "dependencies": {
     "uglify-js": "^3.17.4"
   }
 }
