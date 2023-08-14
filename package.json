@@ -1,0 +1,36 @@
+{
+  "name": "@kpander/packager-js",
+  "version": "1.0.0",
+  "description": "Utility scripts for creating distribution package versions of javascript files",
+  "homepage": "https://github.com/kpander/packager-js",
+  "author": {
+    "name": "Kendall Anderson",
+    "email": "<kpander@invisiblethreads.com>"
+  },
+  "main": "src/packager.js",
+  "files": [
+    "src/packager.js",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kpander/packager-js.git"
+  },
+  "keywords": [
+    "vanillajs"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "bugs": {
+    "url": "https://github.com/kpander/packager-js/issues"
+  },
+  "devDependencies": {
+    "uglify-js": "^3.17.4"
+  }
+}
