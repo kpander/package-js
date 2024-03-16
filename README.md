@@ -10,6 +10,16 @@ A distribution version will:
 
 # Installation
 
+## With `npm`
+
+If you're installing via `npm`... Ensure your project has an `.npmrc` file in the project root to tell `npm` where to find the package. Ensure the following line exists:
+
+```
+@kpander:registry=https://npm.pkg.github.com/
+```
+
+Then:
+
 ```bash
 $ npm install --save-dev @kpander/packager-js
 ```
