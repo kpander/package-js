@@ -21,7 +21,7 @@ Your build script needs to supply the contents of your `package.json` file. This
 
 E.g.:
 
-This script will take 2 input files:
+This example (build.js) will take 2 input files:
   - `src/PanZoom.js`
   - `src/PanZoom.UI.Drag.js`
 
@@ -43,4 +43,41 @@ packager.process("src/PanZoom.UI.Drag.js", "dist/PanZoom.UI.Drag.min.js");
 $ node build.js
 ```
 
+
+# Example
+
+Assume:
+  - Your source file is named `hellowWorld.js`
+  - It's in a project with a package.json with:
+    - `homepage: "https://github.com/kpander/MyAwesomeProject"`
+    - `version: "2.1.5"`
+
+Your source file looks like:
+
+```js
+/* I am a simple test script */
+console.log("Hello, world");
+const x = 1;
+console.log(x + 1);
+```
+
+The 'packaged' version will look something like this:
+
+```js
+/* https://github.com/kpander/MyAwesomeProject */
+/* dist/helloWorld.js v2.1.5 Wed Aug 23 2023 11:05:47 GMT-0400 (Eastern Daylight Saving Time) */
+
+console.log("Hello, world");const x=1;console.log(x+1);
+```
+
+
+# Tests
+
+Jest tests exist in the `test` folder. Run via:
+
+```bash
+$ npm run test
+```
+
+Currently only tests for the happy path exist.
 
